@@ -21,12 +21,12 @@ jobs:
       - name: 'checkout'
         uses: actions/checkout@v4
       - name: 'build and deploy'
-        uses: littleji/zola-deploy-action@master
+        uses: littleji/zola-deploy-action@master     
+        with: 
+          ssh-key: ${{ secrets.DEPLOY_TOKEN }}
         env:
           PAGES_BRANCH: master
           BUILD_DIR: .
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: littleji/littleji.github.io
-      - name: Debug Logs  
-        run: git remote -v && git log --oneline
