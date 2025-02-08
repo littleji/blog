@@ -27,6 +27,6 @@ jobs:
           PAGES_BRANCH: master
           BUILD_DIR: .
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY: littleji/littleji.github.io           
+          REPOSITORY: littleji/littleji.github.io
       - name: Debug Logs
         run: git remote -v && git log --oneline
