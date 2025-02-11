@@ -43,3 +43,7 @@ footer_menu = [
    # {url = "https://tabi-stats.osc.garden", name = "site_statistics", trailing_slash = true},
     {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
 ]
+
+socials = [
+    { name = "github", url = "https://github.com/littleji/", icon = "github" },
+]
