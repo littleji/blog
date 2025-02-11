@@ -3,3 +3,4 @@ zola.exe
 zola-v0.19.2-x86_64-pc-windows-msvc.tar.gz
 zola-v0.19.2-x86_64-unknown-linux-gnu.tar.gz
 public
+zola-deploy-action
